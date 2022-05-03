@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.Col-1{
+    background-image: url('D:/React/my-react-app/src/Dasher/Images/ezgif.com-gif-maker (3).jpg');
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.inner{
+    display: flex;
+    height:inherit;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+.inner h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.inner p {
+    font-size: 40px;
+    font-weight: 600;
+}
+.cont{
+    background-color: rgb(223, 223, 215);
+    height: 100vh;
+}
+.contact{
+    margin-top: -200px;
+    margin-left: 100px;
+    width: 85%;
+    height: 600px;
+    display: flex;
+    background-color: white;
+    opacity: 0.99;
+}
+.contact .Cont_left{
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+}
+.contact .right{
+    width: 30%;
+    background-image: url('D:/React/my-react-app/src/Dasher/Images/end2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Cont_left h4{
+    text-align: center;
+    padding: 10px;
+}
+.right h4{
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    color: rgb(29, 157, 189);
+}
+.right p,small{
+    font-weight: 700;
+    color: rgb(29, 157, 189);    
+}
+.Cont_inputs{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    flex-flow: column;
+    width: 90%;
+    height: 90%;
+}
+ .Cont_doubles{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+.Cont_doubles input{
+    width: 48%;
+}
+.Cont_inputs input,textarea{
+    border-color: rgb(238, 232, 232);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+.Cont_inputs .Cont_left-end{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.Cont_left-end a {
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    background-color: rgb(255, 94, 0);
+}
+.info{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+}
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.outer:hover{
+    background-color: rgb(255, 102, 0);
+    transition: 0.5s  ease;
+}
+.Cont_left-end button{
+    color: black;
+    background-color: pink;
+    width: 20%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.Cont_left-end button:hover{
+    background-color: rgb(20, 129, 129);
+    animation: wiggle 0.6s;
+}
+@keyframes wiggle{
+    25%{
+	transform: scale(0.8,1.3);
+    }
+    50%{
+	transform: scale(1.1,0.8);
+    }
+    75%{
+	transform: scale(0.7,1.2);
+    }
+}
+@media (max-width:500px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .cont{
+        width: 100%;
+        height: 1100px;
+        margin-top: 100px;
+    }
+    .contact{
+        width: inherit;
+        display: flex;
+        height: inherit;
+        flex-flow: column;
+        margin-left: 0;
+    }
+    .contact .right,.contact .Cont_left{
+        width: 100%;
+        height: 550px;
+    }
+    .contact .Cont_inputs{
+        height: 460px;
+    }
+    .contact .Cont_inputs .Cont_doubles{
+        height: 90px;
+    }
+    .contact .Cont_inputs ,.contact .Cont_inputs .Cont_doubles{
+        width: inherit;
+        display: flex;
+        flex-flow: column;
+    }
+    .Cont_doubles input{
+        width: inherit;
+    }
+}

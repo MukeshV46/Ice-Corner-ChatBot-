@@ -1,0 +1,81 @@
+.Press{
+    text-align: center;
+    margin-top: 70px;
+    background-color: pink;
+    font-weight: bold;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.PresCar{
+    padding: 20px;;
+    width: 33%;
+    border-radius: 50px;
+    height: 300px;
+}
+.Press .carousel-item,.active{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hour{
+    display: flex;
+    background-color: pink;
+}
+.hour img{
+    width: 50%;
+}
+.hour div{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hour div button{
+    background-color: rgb(20, 129, 129);
+    color: white;
+    width: 30%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.hour div button:hover{
+    animation: wiggle 0.6s;
+    background-color: gray;
+}
+@keyframes wiggle{
+    25%{
+	transform: scale(0.8,1.3);
+    }
+    50%{
+	transform: scale(1.1,0.8);
+    }
+    75%{
+	transform: scale(0.7,1.2);
+    }
+}
+@media (max-width:500px){
+    .hour{
+        flex-flow: column;
+        width: 100%;
+    }
+    .hour div,.hour #mapD {
+        flex-flow: column;
+        width: 100%;
+        height: 400px;        
+    }
+    .hour div img,.hour div button{
+        width: 70%;
+    }
+    .Press .carousel-inner{
+        height: 100%;
+        width: 100%;
+    }
+    .Press .carousel-item {
+        width: inherit;
+        height: 200px;
+    }
+    .Press .carousel-item img{
+        width: 33.3%;
+        height: 200px;        
+    }
+}

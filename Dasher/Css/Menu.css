@@ -1,0 +1,98 @@
+.MenuItem{
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;   
+
+}
+.MenuItem h1,h4{
+    color: rgb(13, 173, 173);
+}
+.MenuItem p{
+    width: 40%;
+    text-align: center;
+}
+.MenuItem button{
+    background-color: rgb(20, 129, 129);
+    color: white;
+    width: 20%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.MenuItem  button:hover{
+    animation: wiggle 0.6s;
+    background-color: gray;
+}
+.Triple{
+    background-image: url('D:/React/my-react-app/src/Dasher/Images/Triple.jpg');
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.Catering {
+    background-image: url('D:/React/my-react-app/src/Dasher/Images/cup.jpg');
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Catering .ele{
+    height: inherit;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+}
+.Catering .ele button{
+    color: black;
+    width: 20%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.Catering .ele button:hover{
+    background-color: rgb(20, 129, 129);
+    animation: wiggle 0.6s;
+}
+@keyframes wiggle{
+    25%{
+	transform: scale(0.8,1.3);
+    }
+    50%{
+	transform: scale(1.1,0.8);
+    }
+    75%{
+	transform: scale(0.7,1.2);
+    }
+}
+@media (max-width:500px){
+    .MenuItem p,.MenuItem button{
+        width: 60%;
+        padding: 5px;
+    }
+    .ele p{
+        width: 100%;
+    }
+    .Catering .ele button{
+        width: 50%;
+    }
+    .Triple{
+        background-image: url('D:/React/my-react-app/src/Dasher/Images/Triple.jpg');
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background-repeat:round;
+        background-attachment:fixed;
+        background-size: contain;
+        
+    }
+}
